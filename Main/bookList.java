@@ -1,9 +1,23 @@
 public class bookList {
-	int ISBN;
+	String ISBN;
 	String bookName;
 
-	bookList(int id,String name){
+	bookList(String id,String name){
 		ISBN = id;
 		bookName = name; 
+	}
+
+	public String getId(){
+		return ISBN;
+	}
+	public String getName(){
+		return bookName;
+	}
+
+	bookList(){};
+
+	public String toString()
+	{
+		return String.format("%-20s%-20s",ISBN,bookName);
 	}
 }
